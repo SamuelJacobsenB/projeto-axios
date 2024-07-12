@@ -7,10 +7,12 @@ import './index.css';
 //Pages:
 import Home from './routes/Home.jsx';
 import NewPost from './routes/NewPost.jsx';
+import Error from './routes/Error.jsx';
 
 const router = createBrowserRouter([
   {
     element: <App/>,
+    errorElement: <Error/>,
     children: [
       {
         path: '/',
